@@ -6,6 +6,7 @@ package ooc.yoursolution;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.util.ArrayList;
 
 /**
  *
@@ -20,13 +21,16 @@ public class BookingSystem implements BookingSystemInterface{
     String make ="";
     int dailyRate =0;
     int availability =0;
+    String carDetails ="";
+    ArrayList<Car> CarList = new ArrayList();
+    
     //we call the car interface and make a new one called fleet
-    CarInterface car = new fleet();
+    CarInterface car = new Car();
     //we need a loop to read through the document
     while(title !=null){
-        //make =in.readLine();
-        //dailyRate = in.read();
-        //availability = in.read();
+        //we read the first line as the car details
+        carDetails = in.readLine();
+        CarList.add(carDetails);
         
         //fleet car1= new fleet(make,dailyRate,availability);
         //car.addItem(car);

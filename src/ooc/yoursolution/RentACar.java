@@ -4,6 +4,7 @@
  */
 package ooc.yoursolution;
 
+import java.util.ArrayList;
 import java.util.List;
 import ooc.enums.Make;
 import ooc.enums.Month;
@@ -13,10 +14,16 @@ import ooc.enums.Month;
  * @author lafla
  */
 public class RentACar implements RentACarInterface{
-
+    //arraylist with the list of the cars names "carlist"
+private ArrayList<Car> carList;
     @Override
     public List<CarInterface> getCars() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        //call the interface and create a new one called "cars"
+        ArrayList<CarInterface> cars = new ArrayList<>();
+        //for every car model on the list it returns the make saved as cars
+        for(Car model : carList){
+            model.getMake();
+        }return cars;
     }
 
     @Override
