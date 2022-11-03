@@ -13,6 +13,12 @@ import ooc.enums.Month;
  * @author lafla
  */
 public class Car implements CarInterface{
+    private String make;
+    private int dailyRate;
+    private int ID;
+    private int availability;
+    
+    
 
     @Override
     public Map<Month, boolean[]> createAvailability() {
