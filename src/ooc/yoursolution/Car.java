@@ -13,21 +13,29 @@ import ooc.enums.Month;
  * @author lafla
  */
 public class Car implements CarInterface{
-    private String make;
-    private int dailyRate;
+    //car attributes according to the brief
+    private Make make;
+    private double rate;
     private int ID;
     private int availability;
     
     
+    public Car(Make make, double rate, int availability){
+        this.make = make;
+        this.rate = rate;
+        this.availability = availability;
+    }    
+    
 
     @Override
     public Map<Month, boolean[]> createAvailability() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        
+    return null;   
     }
 
     @Override
     public Make getMake() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return this.make;
     }
 
     @Override
@@ -37,7 +45,7 @@ public class Car implements CarInterface{
 
     @Override
     public double getRate() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return this.rate;
     }
 
     @Override
@@ -57,7 +65,7 @@ public class Car implements CarInterface{
 
     @Override
     public int getId() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return this.ID;
     }
 
     @Override

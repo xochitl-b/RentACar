@@ -5,7 +5,7 @@
  */
 package rentacar;
 //check if it changes
-//lkast change
+//last change
 
 
 // This line will give you an error until you create the needed class.
@@ -21,10 +21,11 @@ import java.io.IOException;
 
 
 // INCLUDE HERE THE LINK TO THE GIT REPOSITORY AS A COMMENT!!!!
-
+//xochitl-b/RentACar
 
 // INCLUDE HERE THE FULL NAME AND STUDENT NUMBER OF BOTH TEAM MEMBERS 
 // AS A COMMENT!!!!
+//Magdalena Burtnik - 2021267
 
 public class Driver {
 

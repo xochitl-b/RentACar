@@ -15,15 +15,27 @@ import ooc.enums.Month;
  */
 public class RentACar implements RentACarInterface{
     //arraylist with the list of the cars names "carlist"
-private ArrayList<Car> carList;
+
+    private List<CarInterface> carList;
+    public String name;
+
+    public RentACar(String name) {
+        this.name = name;
+        this.carList = new ArrayList<>();
+        
+    }
+    
+    
+    
     @Override
     public List<CarInterface> getCars() {
         //call the interface and create a new one called "cars"
-        ArrayList<CarInterface> cars = new ArrayList<>();
+        //List<CarInterface> cars = new ArrayList<>();
         //for every car model on the list it returns the make saved as cars
-        for(Car model : carList){
-            model.getMake();
-        }return cars;
+        //for(Car make : carList){
+        //    make.getMake();
+        //}
+    return carList;
     }
 
     @Override
@@ -33,7 +45,7 @@ private ArrayList<Car> carList;
 
     @Override
     public String getName() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return name;
     }
 
     @Override
@@ -58,7 +70,8 @@ private ArrayList<Car> carList;
 
     @Override
     public int getNumberOfCars() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        //size of arraylist named "carList"
+        return carList.size();
     }
     
 }
