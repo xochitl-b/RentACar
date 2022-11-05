@@ -35,7 +35,7 @@ public class RentACar implements RentACarInterface{
 
     @Override
     public void setCars(List<CarInterface> cars) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        this.carList = cars;
     }
 
     @Override
@@ -45,7 +45,7 @@ public class RentACar implements RentACarInterface{
 
     @Override
     public void setName(String name) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        this.name = name;
     }
 
     @Override

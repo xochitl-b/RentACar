@@ -63,7 +63,7 @@ public class Car implements CarInterface{
 
     @Override
     public void setMake(Make make) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        this.make = make;
     }
 
     @Override
@@ -73,7 +73,7 @@ public class Car implements CarInterface{
 
     @Override
     public void setRate(double rate) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        this.rate = rate;
     }
 
     @Override
