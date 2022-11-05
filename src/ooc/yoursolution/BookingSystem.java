@@ -21,7 +21,7 @@ public class BookingSystem implements BookingSystemInterface{
         String name =in.readLine();//name of the renting place is the first line to be read
         
         //we call the car interface and make a new one called fleet
-        RentACarInterface rentACarShop = new RentACar(name);
+        RentACarInterface rentACar = new RentACar(name);
 
         //String make;
         //int rate =0;
@@ -50,14 +50,14 @@ public class BookingSystem implements BookingSystemInterface{
  
        //for loop Creates a car object for every car we have available 
         for (int i = 1;i<=availability;i++){
-            Car car = new Car(make,rate,availability);
+            Car car = new Car(i,make,rate);//i could work as an ID as well
             carList.add(car);
         }
 
    
     }
-    rentACarShop.setCars(carList);
-    return rentACarShop;  
+    rentACar.setCars(carList);
+    return rentACar;  
     }
     
 }

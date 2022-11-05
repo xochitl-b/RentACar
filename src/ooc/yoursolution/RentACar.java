@@ -29,12 +29,7 @@ public class RentACar implements RentACarInterface{
     
     @Override
     public List<CarInterface> getCars() {
-        //call the interface and create a new one called "cars"
-        //List<CarInterface> cars = new ArrayList<>();
-        //for every car model on the list it returns the make saved as cars
-        //for(Car make : carList){
-        //    make.getMake();
-        //}
+
     return carList;
     }
 

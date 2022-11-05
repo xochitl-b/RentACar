@@ -4,6 +4,8 @@
  */
 package ooc.yoursolution;
 
+import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Map;
 import ooc.enums.Make;
 import ooc.enums.Month;
@@ -20,15 +22,36 @@ public class Car implements CarInterface{
     private int availability;
     
     
-    public Car(Make make, double rate, int availability){
+    public Car(int ID, Make make, double rate){
         this.make = make;
         this.rate = rate;
-        this.availability = availability;
+        this.ID = ID;
     }    
     
-
+    //this is clearly not right but I'm trying
+    
     @Override
     public Map<Month, boolean[]> createAvailability() {
+        //boolean[] boolArray = new boolean[12];//one per month?
+        //Arrays.fill(boolArray, Boolean.TRUE); // https://www.tutorialspoint.com/how-can-we-initialize-a-boolean-array-in-java#:~:text=The%20boolean%20array%20can%20be,array%20with%20true%20or%20false.
+        
+        HashMap<Month, boolean[]> hmap = new HashMap<>();    
+        hmap.put(Month.APRIL, new boolean[]{true,false});
+//        hmap.put(Month.AUGUST, boolArray );
+//        hmap.put(Month.DECEMBER, boolArray );
+//        hmap.put(Month.FEBRUARY, boolArray );
+//        hmap.put(Month.JANUARY, boolArray );
+//        hmap.put(Month.JULY, boolArray );
+//        hmap.put(Month.JUNE, boolArray );
+//        hmap.put(Month.MARCH, boolArray );
+//        hmap.put(Month.MAY, boolArray );
+//        hmap.put(Month.NOVEMBER, boolArray );
+//        hmap.put(Month.OCTOBER, boolArray );
+//        hmap.put(Month.SEPTEMBER, boolArray );
+        
+        //for (String availability : hmap.get(true)){
+        //    System.out.println(availability);
+        //}
         
     return null;   
     }
